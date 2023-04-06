@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Pane prefHeight="400.0" prefWidth="80.0" style="-fx-background-color: #333977;">
+               <children>
+                  <Button layoutX="30.0" layoutY="278.0" mnemonicParsing="false" style="-fx-background-color: #1a1830;" textFill="WHITE" />
+                  <Button layoutX="30.0" layoutY="239.0" mnemonicParsing="false" style="-fx-background-color: #1a1830;" textFill="WHITE" />
+               </children>
+            </Pane>
+            <Button layoutX="13.0" layoutY="324.0" mnemonicParsing="false" style="-fx-background-color: #1a1830; -fx-background-radius: 50px;" text="Logout" textFill="WHITE" />
+            <Pane layoutX="78.0" prefHeight="400.0" prefWidth="523.0" style="-fx-background-color: c9cbd9;">
+               <children>
+                  <ImageView fitHeight="400.0" fitWidth="612.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../268_Organic_White_Background.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="33.0" layoutY="29.0" text="Dashboard">
+                     <font>
+                        <Font name="Tahoma" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="33.0" layoutY="67.0" text="Dashboard &gt; Main" />
+                  <Pane layoutX="33.0" layoutY="110.0" prefHeight="99.0" prefWidth="214.0" style="-fx-background-color: #A8A0F2; -fx-background-radius: 20px;">
+                     <children>
+                        <Label layoutX="18.0" layoutY="14.0" text="Savings" textFill="WHITE">
+                           <font>
+                              <Font name="Tahoma" size="25.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="18.0" layoutY="50.0" text="Rp 200.000" textFill="#686494">
+                           <font>
+                              <Font name="Tahoma Bold" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="261.0" layoutY="110.0" prefHeight="99.0" prefWidth="214.0" style="-fx-background-color: #A8A0F2; -fx-background-radius: 20px;">
+                     <children>
+                        <Label layoutX="24.0" layoutY="14.0" text="Expenses" textFill="WHITE">
+                           <font>
+                              <Font name="Tahoma" size="25.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="24.0" layoutY="50.0" text="Rp -50.000" textFill="#686494">
+                           <font>
+                              <Font name="Tahoma Bold" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="32.0" layoutY="233.0" prefHeight="32.0" prefWidth="442.0" style="-fx-background-color: #A8A0F2; -fx-background-radius: 10px;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="10.0" text="12 - 4 - 2023" textFill="#686494">
+                           <font>
+                              <Font name="Tahoma Bold" size="11.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="116.0" layoutY="10.0" text="Savings" textFill="#686494">
+                           <font>
+                              <Font name="Tahoma Bold" size="11.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="263.0" layoutY="10.0" prefHeight="17.0" prefWidth="163.0" text="100.000" textFill="WHITE">
+                           <font>
+                              <Font name="Tahoma Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="243.0" layoutY="9.0" prefHeight="17.0" prefWidth="19.0" text="Rp" textFill="WHITE">
+                           <font>
+                              <Font name="Tahoma Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="32.0" layoutY="277.0" prefHeight="32.0" prefWidth="442.0" style="-fx-background-color: #A8A0F2; -fx-background-radius: 10px;">
+                     <children>
+                        <Label layoutX="13.0" layoutY="10.0" text="11 - 4 - 2023" textFill="#686494">
+                           <font>
+                              <Font name="Tahoma Bold" size="11.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="115.0" layoutY="11.0" text="Expenses" textFill="#686494">
+                           <font>
+                              <Font name="Tahoma Bold" size="11.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="265.0" layoutY="6.0" prefHeight="17.0" prefWidth="163.0" text="50.000" textFill="WHITE">
+                           <font>
+                              <Font name="Tahoma Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="243.0" layoutY="6.0" prefHeight="17.0" prefWidth="19.0" text="Rp" textFill="WHITE">
+                           <font>
+                              <Font name="Tahoma Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="32.0" layoutY="320.0" prefHeight="32.0" prefWidth="442.0" style="-fx-background-color: #A8A0F2; -fx-background-radius: 10px;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="10.0" text="10 - 4 - 2023" textFill="#686494">
+                           <font>
+                              <Font name="Tahoma Bold" size="11.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="116.0" layoutY="10.0" text="Savings" textFill="#686494">
+                           <font>
+                              <Font name="Tahoma Bold" size="11.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="263.0" layoutY="10.0" prefHeight="17.0" prefWidth="163.0" text="100.000" textFill="WHITE">
+                           <font>
+                              <Font name="Tahoma Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="243.0" layoutY="9.0" prefHeight="17.0" prefWidth="19.0" text="Rp" textFill="WHITE">
+                           <font>
+                              <Font name="Tahoma Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
