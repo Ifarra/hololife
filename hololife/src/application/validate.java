@@ -22,6 +22,7 @@ public class validate {
 	@FXML
 	private PasswordField passinput;
 	
+	
 	private Stage stage;
 	private Scene scene;
 	private Parent root;
@@ -36,13 +37,14 @@ public class validate {
 		if (userid.matches("user") && userpass.matches("userjuga")) {
 			root  = FXMLLoader.load(getClass().getResource("Dash.fxml"));
 			stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+			stage.setTitle("Hololife - Personal dashboard");
+			stage.setResizable(false);
 			scene = new Scene(root);
 			stage.setScene(scene);
 			stage.show();
-			
 		}
-		
 	}
+	
 	
 	
 	

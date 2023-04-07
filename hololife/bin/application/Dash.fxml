@@ -9,12 +9,12 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<VBox xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controllbl">
    <children>
       <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
          <children>
             <Pane prefHeight="400.0" prefWidth="80.0" style="-fx-background-color: #333977;" />
-            <Button layoutX="13.0" layoutY="324.0" mnemonicParsing="false" style="-fx-background-color: #1a1830; -fx-background-radius: 50px;" text="Logout" textFill="WHITE" />
+            <Button fx:id="logout" layoutX="13.0" layoutY="324.0" mnemonicParsing="false" onAction="#logout" style="-fx-background-color: #1a1830; -fx-background-radius: 50px;" text="Logout" textFill="WHITE" />
             <Pane layoutX="78.0" prefHeight="400.0" prefWidth="523.0" style="-fx-background-color: c9cbd9;">
                <children>
                   <ImageView fitHeight="400.0" fitWidth="612.0" pickOnBounds="true" preserveRatio="true">
@@ -30,47 +30,47 @@
                   <Label layoutX="33.0" layoutY="67.0" text="Dashboard &gt; Main" />
                   <Pane layoutX="33.0" layoutY="110.0" prefHeight="99.0" prefWidth="214.0" style="-fx-background-color: #A8A0F2; -fx-background-radius: 20px;">
                      <children>
-                        <Label layoutX="18.0" layoutY="14.0" text="Savings" textFill="#dcdaf2">
+                        <Label layoutX="18.0" layoutY="14.0" text="Savings" textFill="WHITE">
                            <font>
                               <Font name="Tahoma" size="25.0" />
                            </font>
                         </Label>
-                        <Label layoutX="18.0" layoutY="50.0" text="Rp 200.000" textFill="#686494">
+                        <Label fx:id="savingslbl" layoutX="18.0" layoutY="50.0" text="Rp 200.000" textFill="#686494">
                            <font>
                               <Font name="Tahoma Bold" size="20.0" />
                            </font>
                         </Label>
-                        <Button layoutX="117.0" layoutY="16.0" mnemonicParsing="false" style="-fx-background-color: #1a1830;" textFill="WHITE" />
+                        <Button fx:id="savings" ellipsisString="_" graphicTextGap="2.0" layoutX="124.0" layoutY="14.0" mnemonicParsing="false" onAction="#expenses" prefHeight="1.0" prefWidth="26.0" style="-fx-background-color: #ffffff;" text="+" />
                      </children>
                   </Pane>
                   <Pane layoutX="261.0" layoutY="110.0" prefHeight="99.0" prefWidth="214.0" style="-fx-background-color: #A8A0F2; -fx-background-radius: 20px;">
                      <children>
-                        <Label layoutX="24.0" layoutY="14.0" text="Expenses" textFill="#dcdaf2">
+                        <Label layoutX="24.0" layoutY="14.0" text="Expenses" textFill="WHITE">
                            <font>
                               <Font name="Tahoma" size="25.0" />
                            </font>
                         </Label>
-                        <Label layoutX="24.0" layoutY="50.0" text="Rp -50.000" textFill="#686494">
+                        <Label fx:id="expenseslbl" layoutX="24.0" layoutY="50.0" text="Rp -50.000" textFill="#686494">
                            <font>
                               <Font name="Tahoma Bold" size="20.0" />
                            </font>
                         </Label>
-                        <Button layoutX="143.0" layoutY="15.0" mnemonicParsing="false" style="-fx-background-color: #1a1830;" textFill="WHITE" />
+                        <Button fx:id="expenses" layoutX="149.0" layoutY="15.0" mnemonicParsing="false" onAction="#expenses" prefHeight="14.0" prefWidth="26.0" style="-fx-background-color: #ffffff;" text="+" />
                      </children>
                   </Pane>
                   <Pane layoutX="32.0" layoutY="233.0" prefHeight="32.0" prefWidth="442.0" style="-fx-background-color: #A8A0F2; -fx-background-radius: 10px;">
                      <children>
-                        <Label layoutX="14.0" layoutY="10.0" text="12 - 4 - 2023" textFill="#686494">
+                        <Label fx:id="datelblsatu" layoutX="14.0" layoutY="10.0" text="12 - 4 - 2023" textFill="#686494">
                            <font>
                               <Font name="Tahoma Bold" size="11.0" />
                            </font>
                         </Label>
-                        <Label layoutX="116.0" layoutY="10.0" text="Savings" textFill="#686494">
+                        <Label fx:id="optionlblsatu" layoutX="116.0" layoutY="10.0" text="Savings" textFill="#686494">
                            <font>
                               <Font name="Tahoma Bold" size="11.0" />
                            </font>
                         </Label>
-                        <Label layoutX="263.0" layoutY="10.0" prefHeight="17.0" prefWidth="163.0" text="100.000" textFill="WHITE">
+                        <Label fx:id="totallblsatu" layoutX="263.0" layoutY="10.0" prefHeight="17.0" prefWidth="163.0" text="100.000" textFill="WHITE">
                            <font>
                               <Font name="Tahoma Bold" size="12.0" />
                            </font>
@@ -84,17 +84,17 @@
                   </Pane>
                   <Pane layoutX="32.0" layoutY="277.0" prefHeight="32.0" prefWidth="442.0" style="-fx-background-color: #A8A0F2; -fx-background-radius: 10px;">
                      <children>
-                        <Label layoutX="13.0" layoutY="10.0" text="11 - 4 - 2023" textFill="#686494">
+                        <Label fx:id="datelbldua" layoutX="13.0" layoutY="10.0" text="11 - 4 - 2023" textFill="#686494">
                            <font>
                               <Font name="Tahoma Bold" size="11.0" />
                            </font>
                         </Label>
-                        <Label layoutX="115.0" layoutY="11.0" text="Expenses" textFill="#686494">
+                        <Label fx:id="optionlbldua" layoutX="115.0" layoutY="11.0" text="Expenses" textFill="#686494">
                            <font>
                               <Font name="Tahoma Bold" size="11.0" />
                            </font>
                         </Label>
-                        <Label layoutX="265.0" layoutY="6.0" prefHeight="17.0" prefWidth="163.0" text="50.000" textFill="WHITE">
+                        <Label fx:id="totallbldua" layoutX="265.0" layoutY="6.0" prefHeight="17.0" prefWidth="163.0" text="50.000" textFill="WHITE">
                            <font>
                               <Font name="Tahoma Bold" size="12.0" />
                            </font>
@@ -108,17 +108,17 @@
                   </Pane>
                   <Pane layoutX="32.0" layoutY="320.0" prefHeight="32.0" prefWidth="442.0" style="-fx-background-color: #A8A0F2; -fx-background-radius: 10px;">
                      <children>
-                        <Label layoutX="14.0" layoutY="10.0" text="10 - 4 - 2023" textFill="#686494">
+                        <Label fx:id="datelbltiga" layoutX="14.0" layoutY="10.0" text="10 - 4 - 2023" textFill="#686494">
                            <font>
                               <Font name="Tahoma Bold" size="11.0" />
                            </font>
                         </Label>
-                        <Label layoutX="116.0" layoutY="10.0" text="Savings" textFill="#686494">
+                        <Label fx:id="optionlbltiga" layoutX="116.0" layoutY="10.0" text="Savings" textFill="#686494">
                            <font>
                               <Font name="Tahoma Bold" size="11.0" />
                            </font>
                         </Label>
-                        <Label layoutX="263.0" layoutY="10.0" prefHeight="17.0" prefWidth="163.0" text="100.000" textFill="WHITE">
+                        <Label fx:id="totallbltiga" layoutX="263.0" layoutY="10.0" prefHeight="17.0" prefWidth="163.0" text="100.000" textFill="WHITE">
                            <font>
                               <Font name="Tahoma Bold" size="12.0" />
                            </font>
