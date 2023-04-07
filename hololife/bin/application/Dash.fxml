@@ -35,7 +35,7 @@
                               <Font name="Tahoma" size="25.0" />
                            </font>
                         </Label>
-                        <Label fx:id="savingslbl" layoutX="18.0" layoutY="50.0" text="Rp 200.000" textFill="#686494">
+                        <Label fx:id="savingslbl" layoutX="18.0" layoutY="50.0" text="Rp 200000" textFill="#686494">
                            <font>
                               <Font name="Tahoma Bold" size="20.0" />
                            </font>
@@ -50,7 +50,7 @@
                               <Font name="Tahoma" size="25.0" />
                            </font>
                         </Label>
-                        <Label fx:id="expenseslbl" layoutX="24.0" layoutY="50.0" text="Rp -50.000" textFill="#686494">
+                        <Label fx:id="expenseslbl" layoutX="24.0" layoutY="50.0" text="Rp 50000" textFill="#686494">
                            <font>
                               <Font name="Tahoma Bold" size="20.0" />
                            </font>
@@ -58,19 +58,19 @@
                         <Button fx:id="expenses" layoutX="149.0" layoutY="15.0" mnemonicParsing="false" onAction="#expenses" prefHeight="14.0" prefWidth="26.0" style="-fx-background-color: #ffffff;" text="+" />
                      </children>
                   </Pane>
-                  <Pane layoutX="32.0" layoutY="233.0" prefHeight="32.0" prefWidth="442.0" style="-fx-background-color: #A8A0F2; -fx-background-radius: 10px;">
+                  <Pane layoutX="33.0" layoutY="263.0" prefHeight="32.0" prefWidth="442.0" style="-fx-background-color: #A8A0F2; -fx-background-radius: 10px;">
                      <children>
-                        <Label fx:id="datelblsatu" layoutX="14.0" layoutY="10.0" text="12 - 4 - 2023" textFill="#686494">
+                        <Label fx:id="datelblsatu" layoutX="14.0" layoutY="10.0" text="== - == - ==" textFill="#686494">
                            <font>
                               <Font name="Tahoma Bold" size="11.0" />
                            </font>
                         </Label>
-                        <Label fx:id="optionlblsatu" layoutX="116.0" layoutY="10.0" text="Savings" textFill="#686494">
+                        <Label fx:id="optionlblsatu" layoutX="116.0" layoutY="10.0" text="-----" textFill="#686494">
                            <font>
                               <Font name="Tahoma Bold" size="11.0" />
                            </font>
                         </Label>
-                        <Label fx:id="totallblsatu" layoutX="263.0" layoutY="10.0" prefHeight="17.0" prefWidth="163.0" text="100.000" textFill="WHITE">
+                        <Label fx:id="totallblsatu" layoutX="263.0" layoutY="10.0" prefHeight="17.0" prefWidth="163.0" text="======" textFill="WHITE">
                            <font>
                               <Font name="Tahoma Bold" size="12.0" />
                            </font>
@@ -82,43 +82,20 @@
                         </Label>
                      </children>
                   </Pane>
-                  <Pane layoutX="32.0" layoutY="277.0" prefHeight="32.0" prefWidth="442.0" style="-fx-background-color: #A8A0F2; -fx-background-radius: 10px;">
+                  <Button fx:id="refresh" layoutX="418.0" layoutY="72.0" mnemonicParsing="false" onAction="#refresh" style="-fx-background-color: #A8A0F2; -fx-background-radius: 15px;" text="Refresh" textFill="WHITE" />
+                  <Pane layoutX="33.0" layoutY="330.0" prefHeight="32.0" prefWidth="442.0" style="-fx-background-color: #A8A0F2; -fx-background-radius: 10px;">
                      <children>
-                        <Label fx:id="datelbldua" layoutX="13.0" layoutY="10.0" text="11 - 4 - 2023" textFill="#686494">
+                        <Label fx:id="datelblsatu1" layoutX="14.0" layoutY="10.0" text="== - == - ==" textFill="#686494">
                            <font>
                               <Font name="Tahoma Bold" size="11.0" />
                            </font>
                         </Label>
-                        <Label fx:id="optionlbldua" layoutX="115.0" layoutY="11.0" text="Expenses" textFill="#686494">
+                        <Label fx:id="optionlblsatu1" layoutX="116.0" layoutY="10.0" text="-----" textFill="#686494">
                            <font>
                               <Font name="Tahoma Bold" size="11.0" />
                            </font>
                         </Label>
-                        <Label fx:id="totallbldua" layoutX="265.0" layoutY="6.0" prefHeight="17.0" prefWidth="163.0" text="50.000" textFill="WHITE">
-                           <font>
-                              <Font name="Tahoma Bold" size="12.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="243.0" layoutY="6.0" prefHeight="17.0" prefWidth="19.0" text="Rp" textFill="WHITE">
-                           <font>
-                              <Font name="Tahoma Bold" size="12.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </Pane>
-                  <Pane layoutX="32.0" layoutY="320.0" prefHeight="32.0" prefWidth="442.0" style="-fx-background-color: #A8A0F2; -fx-background-radius: 10px;">
-                     <children>
-                        <Label fx:id="datelbltiga" layoutX="14.0" layoutY="10.0" text="10 - 4 - 2023" textFill="#686494">
-                           <font>
-                              <Font name="Tahoma Bold" size="11.0" />
-                           </font>
-                        </Label>
-                        <Label fx:id="optionlbltiga" layoutX="116.0" layoutY="10.0" text="Savings" textFill="#686494">
-                           <font>
-                              <Font name="Tahoma Bold" size="11.0" />
-                           </font>
-                        </Label>
-                        <Label fx:id="totallbltiga" layoutX="263.0" layoutY="10.0" prefHeight="17.0" prefWidth="163.0" text="100.000" textFill="WHITE">
+                        <Label fx:id="totallblsatu1" layoutX="263.0" layoutY="10.0" prefHeight="17.0" prefWidth="163.0" text="======" textFill="WHITE">
                            <font>
                               <Font name="Tahoma Bold" size="12.0" />
                            </font>
@@ -130,6 +107,16 @@
                         </Label>
                      </children>
                   </Pane>
+                  <Label layoutX="33.0" layoutY="238.0" text="Savings History">
+                     <font>
+                        <Font name="Futura Md BT Medium" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="33.0" layoutY="305.0" text="Expenses History">
+                     <font>
+                        <Font name="Futura Md BT Medium" size="18.0" />
+                     </font>
+                  </Label>
                </children>
             </Pane>
          </children>

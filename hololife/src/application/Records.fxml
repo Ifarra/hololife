@@ -32,7 +32,7 @@
                   <TextField fx:id="indate" layoutX="33.0" layoutY="141.0" prefHeight="25.0" prefWidth="248.0" promptText="Date" />
                   <TextField fx:id="inopt" layoutX="33.0" layoutY="176.0" prefHeight="25.0" prefWidth="248.0" promptText="Option" />
                   <TextField fx:id="innominal" layoutX="33.0" layoutY="211.0" prefHeight="25.0" prefWidth="248.0" promptText="Nominal" />
-                  <Button fx:id="submit" layoutX="33.0" layoutY="254.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="71.0" style="-fx-background-color: #bec4cd;" text="Submit" />
+                  <Button fx:id="submit" layoutX="33.0" layoutY="254.0" mnemonicParsing="false" onAction="#submit" prefHeight="25.0" prefWidth="71.0" style="-fx-background-color: #bec4cd;" text="Submit" />
                   <Label fx:id="inputlbl" layoutX="33.0" layoutY="110.0" text="Input nominal">
                      <font>
                         <Font name="Consolas Italic" size="16.0" />

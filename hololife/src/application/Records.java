@@ -42,9 +42,9 @@ public class Records extends Main{
 	private Scene scene;
 	private Parent root;
 	
-	String opt;
-	String nml;
-	String dat;
+	private String opt;
+	private String nml;
+	private String dat;
 	
 	Controllbl myCtrllbl = new Controllbl();
 	Controllbl.Labelcls addlblopt = myCtrllbl.new Labelcls();
@@ -61,19 +61,33 @@ public class Records extends Main{
 		stage.show();
     }
     
-    public void submit (ActionEvent ev) {
+    public void submit (ActionEvent e) throws IOException {
+    	root  = FXMLLoader.load(getClass().getResource("Dash.fxml"));
+		stage = (Stage)((Node)e.getSource()).getScene().getWindow();
+		stage.setTitle("Hololife - Personal dashboard");
+		stage.setResizable(false);
+		scene = new Scene(root);
+		stage.setScene(scene);
+		stage.show();
+    	
     	opt = inopt.getText();
     	nml = innominal.getText();
     	dat = indate.getText();
     	
-    	addlblopt.addlbl(opt);
-    	addlbldate.addlbl(dat);
-    	addlblnum.addlbl(nml);
+    	if (opt.matches("Savings") || opt.matches("savings")) {
+    		addlblopt.addlbl(opt);
+        	addlbldate.addlbl(dat);
+        	addlblnum.addlbl(nml);
+    	} else {
+    	addlblopt.addlblsv(opt);
+    	addlbldate.addlblsv(dat);
+    	addlblnum.addlblsv(nml);
+    	}
     }
 
-    public void backtodash (ActionEvent eve) throws IOException {
+    public void backtodash (ActionEvent e) throws IOException {
     	root  = FXMLLoader.load(getClass().getResource("Dash.fxml"));
-		stage = (Stage)((Node)eve.getSource()).getScene().getWindow();
+		stage = (Stage)((Node)e.getSource()).getScene().getWindow();
 		stage.setTitle("Hololife - Personal dashboard");
 		stage.setResizable(false);
 		scene = new Scene(root);
