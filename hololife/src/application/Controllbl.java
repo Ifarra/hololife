@@ -62,6 +62,7 @@ public class Controllbl extends Main{
    	static int sv;
    	static int ex;
 	
+   	//Inner classes
 	public class Labelcls {
 		public void addlbl (String lbl) throws IOException {
 			BufferedWriter optwr = new BufferedWriter(new FileWriter("satuopttxt.txt"));
@@ -74,6 +75,8 @@ public class Controllbl extends Main{
 			optwr.close();
     	}
     }
+	
+	//Polymorphism
     public class labeladdtotal extends Labelcls {
     	public void addlbl (String lbl) throws IOException  {
     		BufferedWriter totalwr = new BufferedWriter(new FileWriter("totaltxt.txt"));

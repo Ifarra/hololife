@@ -13,6 +13,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
+//inheritance
 public class Records extends Main{
 
     
@@ -37,7 +38,7 @@ public class Records extends Main{
     @FXML
     private Button backtodash;
 
-    
+    //Encapsulation
     private Stage stage;
 	private Scene scene;
 	private Parent root;
